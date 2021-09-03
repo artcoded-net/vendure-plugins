@@ -1,0 +1,5 @@
+{
+  "packages": ["plugins/*"],
+  "version": "independent",
+  "useWorkspaces": "true"
+}

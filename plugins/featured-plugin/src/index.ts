@@ -1,0 +1,1 @@
+export { FeaturedPlugin } from './plugin';

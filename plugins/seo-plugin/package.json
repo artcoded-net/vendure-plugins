@@ -1,0 +1,29 @@
+{
+  "name": "@artcoded/vendure-seo-plugin",
+  "version": "0.2.3",
+  "author": {
+    "name": "Artcoded",
+    "email": "dev@artcoded.net",
+    "url": "https://artcoded.net"
+  },
+  "description": "Simple plugin for Vendure that adds SEO-specific fields to collections and products",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "peerDependencies": {
+    "@vendure/core": "1.1.0"
+  },
+  "gitHead": "9539edd7261fa258d71438a03dad4476cded00ad",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "prepare": "yarn build"
+  }
+}

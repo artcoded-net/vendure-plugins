@@ -1,0 +1,10 @@
+{
+  "name": "@artcoded/vendure-plugins-root",
+  "private": true,
+  "workspaces": [
+    "plugins/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}

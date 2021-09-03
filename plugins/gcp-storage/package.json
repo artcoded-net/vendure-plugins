@@ -1,0 +1,39 @@
+{
+  "name": "@artcoded/gcp-asset-server-plugin",
+  "version": "1.0.4",
+  "author": {
+    "name": "Artcoded",
+    "email": "dev@artcoded.net",
+    "url": "https://artcoded.net"
+  },
+  "description": "Plugin for using Google Cloud Storage for Vendure Assets (full credits to Pinelab, see README)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "dependencies": {
+    "@google-cloud/storage": "latest",
+    "@vendure/asset-server-plugin": "1.1.0",
+    "mime-types": "latest",
+    "sharp": "^0.28.3"
+  },
+  "peerDependencies": {
+    "@vendure/core": "1.1.0"
+  },
+  "devDependencies": {
+    "@types/mime-types": "latest",
+    "@types/sharp": "latest"
+  },
+  "gitHead": "9539edd7261fa258d71438a03dad4476cded00ad",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "prepare": "yarn build"
+  }
+}

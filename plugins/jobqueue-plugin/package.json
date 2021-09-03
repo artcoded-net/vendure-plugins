@@ -1,0 +1,29 @@
+{
+  "name": "@artcoded/job-queue-plugin",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "version": "0.2.9",
+  "author": {
+    "name": "Artcoded",
+    "email": "dev@artcoded.net",
+    "url": "https://artcoded.net"
+  },
+  "description": "Vendure plugin for JobQueue implementation using Google Cloud PubSub, taken from Vendure main repo",
+  "dependencies": {
+    "@google-cloud/pubsub": "latest"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "prepare": "yarn build"
+  },
+  "gitHead": "e5a32b5db4f020393cc6616e6b8ed170a487e5f1"
+}

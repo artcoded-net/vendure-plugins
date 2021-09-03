@@ -1,0 +1,1 @@
+export { SeoPlugin } from './plugin';

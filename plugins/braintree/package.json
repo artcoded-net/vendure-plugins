@@ -1,0 +1,36 @@
+{
+  "name": "@artcoded/vendure-braintree-plugin",
+  "author": {
+    "name": "Artcoded",
+    "email": "dev@artcoded.net",
+    "url": "https://artcoded.net"
+  },
+  "description": "Braintree integration plugin for Vendure, adapted from the real-world-vendure plugin",
+  "version": "1.0.3",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "dependencies": {
+    "@nestjs/graphql": "latest",
+    "@types/braintree": "^2.22.4",
+    "apollo-server-core": "latest",
+    "braintree": "^3.0.0"
+  },
+  "peerDependencies": {
+    "@vendure/common": "1.1.0",
+    "@vendure/core": "1.1.0"
+  },
+  "gitHead": "9539edd7261fa258d71438a03dad4476cded00ad",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "prepare": "yarn build"
+  }
+}

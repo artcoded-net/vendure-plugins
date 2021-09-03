@@ -1,0 +1,35 @@
+{
+  "name": "@artcoded/vendure-extended-shipments-plugin",
+  "author": {
+    "name": "Artcoded",
+    "email": "dev@artcoded.net",
+    "url": "https://artcoded.net"
+  },
+  "description": "Vendure plugin that adds shipments configuration capabilities such as price calculation based on parcel weight",
+  "version": "0.2.5",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "peerDependencies": {
+    "@angular/core": "*",
+    "@angular/forms": "*",
+    "@vendure/admin-ui": "1.1.0",
+    "@vendure/common": "1.1.0",
+    "@vendure/core": "1.1.0",
+    "rxjs": "*",
+    "typeorm": "*"
+  },
+  "gitHead": "9539edd7261fa258d71438a03dad4476cded00ad",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "prepare": "yarn build"
+  }
+}

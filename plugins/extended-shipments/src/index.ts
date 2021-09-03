@@ -1,0 +1,1 @@
+export { ExtendedShipmentsPlugin } from './plugin';
