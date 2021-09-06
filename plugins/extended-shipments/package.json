@@ -14,16 +14,17 @@
     "README.md",
     "LICENSE.md"
   ],
-  "peerDependencies": {
+  "dependencies": {
     "@angular/core": "*",
     "@angular/forms": "*",
-    "@vendure/admin-ui": "1.1.0",
-    "@vendure/common": "1.1.0",
-    "@vendure/core": "1.1.0",
+    "@vendure/admin-ui": "^1.2.0",
+    "@vendure/common": "^1.2.0",
+    "@vendure/core": "^1.2.0",
+    "@vendure/ui-devkit": "^1.2.0",
     "rxjs": "*",
     "typeorm": "*"
   },
-  "gitHead": "a73ac6157c2fd9ca6ba46d47082aa47cc19dce8f",
+  "gitHead": "f27c7b6f24c010b54b5a38daedfd4f34f4bde817",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

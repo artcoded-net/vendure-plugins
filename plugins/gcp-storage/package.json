@@ -16,18 +16,16 @@
   ],
   "dependencies": {
     "@google-cloud/storage": "latest",
-    "@vendure/asset-server-plugin": "1.1.0",
+    "@vendure/asset-server-plugin": "^1.2.0",
     "mime-types": "latest",
-    "sharp": "^0.28.3"
-  },
-  "peerDependencies": {
-    "@vendure/core": "1.1.0"
+    "sharp": "^0.28.3",
+    "@vendure/core": "^1.2.0"
   },
   "devDependencies": {
     "@types/mime-types": "latest",
     "@types/sharp": "latest"
   },
-  "gitHead": "a73ac6157c2fd9ca6ba46d47082aa47cc19dce8f",
+  "gitHead": "f27c7b6f24c010b54b5a38daedfd4f34f4bde817",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

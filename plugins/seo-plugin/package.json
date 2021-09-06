@@ -14,10 +14,10 @@
     "README.md",
     "LICENSE.md"
   ],
-  "peerDependencies": {
-    "@vendure/core": "1.1.0"
+  "dependencies": {
+    "@vendure/core": "^1.2.0"
   },
-  "gitHead": "a73ac6157c2fd9ca6ba46d47082aa47cc19dce8f",
+  "gitHead": "f27c7b6f24c010b54b5a38daedfd4f34f4bde817",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

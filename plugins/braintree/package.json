@@ -18,13 +18,11 @@
     "@nestjs/graphql": "latest",
     "@types/braintree": "^2.22.4",
     "apollo-server-core": "latest",
-    "braintree": "^3.0.0"
+    "braintree": "^3.0.0",
+    "@vendure/common": "^1.2.0",
+    "@vendure/core": "^1.2.0"
   },
-  "peerDependencies": {
-    "@vendure/common": "1.1.0",
-    "@vendure/core": "1.1.0"
-  },
-  "gitHead": "a73ac6157c2fd9ca6ba46d47082aa47cc19dce8f",
+  "gitHead": "f27c7b6f24c010b54b5a38daedfd4f34f4bde817",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

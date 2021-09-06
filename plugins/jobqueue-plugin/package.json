@@ -15,7 +15,8 @@
   },
   "description": "Vendure plugin for JobQueue implementation using Google Cloud PubSub, taken from Vendure main repo",
   "dependencies": {
-    "@google-cloud/pubsub": "latest"
+    "@google-cloud/pubsub": "latest",
+    "@vendure/core": "^1.2.0"
   },
   "license": "MIT",
   "publishConfig": {
@@ -25,5 +26,5 @@
     "build": "rimraf dist && tsc",
     "prepare": "yarn build"
   },
-  "gitHead": "a73ac6157c2fd9ca6ba46d47082aa47cc19dce8f"
+  "gitHead": "f27c7b6f24c010b54b5a38daedfd4f34f4bde817"
 }
