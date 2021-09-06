@@ -25,5 +25,5 @@
     "build": "rimraf dist && tsc",
     "prepare": "yarn build"
   },
-  "gitHead": "e5a32b5db4f020393cc6616e6b8ed170a487e5f1"
+  "gitHead": "a73ac6157c2fd9ca6ba46d47082aa47cc19dce8f"
 }

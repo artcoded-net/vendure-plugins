@@ -24,7 +24,7 @@
     "@vendure/common": "1.1.0",
     "@vendure/core": "1.1.0"
   },
-  "gitHead": "9539edd7261fa258d71438a03dad4476cded00ad",
+  "gitHead": "a73ac6157c2fd9ca6ba46d47082aa47cc19dce8f",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
