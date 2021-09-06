@@ -10,6 +10,7 @@ import { AdminUiExtension } from "@vendure/ui-devkit/compiler";
 import { valueShippingEligibilityChecker } from "./checkers/valueEligibility";
 import { flatRateShippingCalculator } from "./calculators/flatrateCalculator";
 import { weightShippingCalculator } from "./calculators/weightCalculator";
+import { weightShippingEligibilityChecker } from "./checkers/weightEligibility";
 
 @VendurePlugin({
   imports: [PluginCommonModule],
@@ -26,6 +27,9 @@ export class ExtendedShipmentsPlugin {
       valueShippingEligibilityChecker
     );
     config!.shippingOptions!.shippingEligibilityCheckers!.push(orderGeoChecker);
+    config!.shippingOptions!.shippingEligibilityCheckers!.push(
+      weightShippingEligibilityChecker
+    );
     config!.shippingOptions!.shippingCalculators!.push(
       weightShippingCalculator
     );
