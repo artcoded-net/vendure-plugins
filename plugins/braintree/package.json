@@ -6,7 +6,7 @@
     "url": "https://artcoded.net"
   },
   "description": "Braintree integration plugin for Vendure, adapted from the real-world-vendure plugin",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
