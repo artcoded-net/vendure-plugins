@@ -6,7 +6,7 @@
     "url": "https://artcoded.net"
   },
   "description": "Vendure plugin that adds shipments configuration capabilities such as price calculation based on parcel weight",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
