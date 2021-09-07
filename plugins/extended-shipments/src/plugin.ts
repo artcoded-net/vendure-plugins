@@ -7,7 +7,7 @@ import ProductVariantCustomFields from "./custom-fields";
 import path from "path";
 import { orderGeoChecker } from "./checkers/geoChecker";
 import { AdminUiExtension } from "@vendure/ui-devkit/compiler";
-import { valueShippingEligibilityChecker } from "./checkers/valueEligibility";
+import { valueWeightShippingEligibilityChecker } from "./checkers/valueEligibility";
 import { flatRateShippingCalculator } from "./calculators/flatrateCalculator";
 import { weightShippingCalculator } from "./calculators/weightCalculator";
 import { weightShippingEligibilityChecker } from "./checkers/weightEligibility";
@@ -24,7 +24,7 @@ export class ExtendedShipmentsPlugin {
   ): Promise<RuntimeVendureConfig> {
     config.customFields.ProductVariant.push(...ProductVariantCustomFields!);
     config!.shippingOptions!.shippingEligibilityCheckers!.push(
-      valueShippingEligibilityChecker
+      valueWeightShippingEligibilityChecker
     );
     config!.shippingOptions!.shippingEligibilityCheckers!.push(orderGeoChecker);
     config!.shippingOptions!.shippingEligibilityCheckers!.push(
