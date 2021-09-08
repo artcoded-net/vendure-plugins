@@ -31,6 +31,7 @@
   },
   "scripts": {
     "build": "rimraf dist && tsc",
-    "prepare": "yarn build"
+    "prepare": "yarn build",
+    "link": "yarn link"
   }
 }

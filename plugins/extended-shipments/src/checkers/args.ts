@@ -1,4 +1,4 @@
-import { ConfigArgType, LanguageCode } from "@vendure/core";
+import { LanguageCode } from "@vendure/core";
 import { ConfigArgDef } from "@vendure/core/dist/common/configurable-operation";
 
 export const minimumValue: ConfigArgDef<"int"> = {

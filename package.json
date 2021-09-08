@@ -7,5 +7,8 @@
   "devDependencies": {
     "lerna": "^3.22.1",
     "typescript": "latest"
+  },
+  "scripts": {
+    "link-packages": "lerna run link"
   }
 }
