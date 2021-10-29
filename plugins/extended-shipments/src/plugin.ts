@@ -37,7 +37,7 @@ export class ExtendedShipmentsPlugin {
 
   // Note: we need to point to source files, as ui extension ts files are not compiled by the plugin, but by the Angular CLI (via compile script)
   static uiExtension: AdminUiExtension = {
-    extensionPath: path.join(__dirname, "../src/ui"),
+    extensionPath: path.join(__dirname, "./ui"),
     ngModules: [
       {
         type: "shared",
