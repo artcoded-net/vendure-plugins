@@ -1,8 +1,8 @@
-# Acknowledgements
+# Braintree plugin for Vendure
 
-This plugin is a subtle adaptation of the official Braintree Vendure plugin, found in the real-world-vendure repository of Vendure.
+This plugin is a subtle adaptation/fix of the [official Braintree Vendure plugin](https://github.com/vendure-ecommerce/real-world-vendure/tree/master/src/plugins/braintree), found in the real-world-vendure repository of Vendure, and that has now been updated based on these fixes.
 
-# Braintree plugin
+Also the following documentation is just a subtle adaptation of the original one.
 
 This plugin enables payments to be processed by [Braintree](https://www.braintreepayments.com/), a popular payment provider.
 

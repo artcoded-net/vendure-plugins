@@ -57,7 +57,7 @@ export const braintreePaymentMethodHandler = new PaymentMethodHandler({
         transactionId: response.transaction.id,
         metadata: extractMetadataFromTransaction(response.transaction),
       };
-    } catch (e) {
+    } catch (e: any) {
       Logger.error(e, loggerCtx);
       return {
         amount: order.totalWithTax,
@@ -79,7 +79,7 @@ export const braintreePaymentMethodHandler = new PaymentMethodHandler({
         success: response.success,
         errorMessage: response.errors ? response.message : undefined,
       };
-    } catch (e) {
+    } catch (e: any) {
       Logger.error(e, loggerCtx);
       return { success: false, errorMessage: e.toString() };
     }

@@ -25,14 +25,6 @@ const getZoneMembers = (zoneName: string) => {
     });
 };
 
-// const filterEnabledCountries = async (countryCodes: string[]) => {
-//   const countryRepo = connection.getRepository(Country);
-//   const enabledCountries = await countryRepo.find({
-//     where: { code: In(countryCodes) }
-//   });
-//   return enabledCountries.filter((country) => country.enabled).map((country) => country.code);
-// }
-
 export const orderGeoChecker = new ShippingEligibilityChecker({
   init: async (injector: Injector) => {
     connection = injector.get(TransactionalConnection);
@@ -123,7 +115,8 @@ export const orderGeoChecker = new ShippingEligibilityChecker({
         return true;
       }
     }
-    // Didn't find any matching code
+    if (!argZones && !argCountries) return true;
+    // Didn't find any matching area
     return false;
   },
 });
