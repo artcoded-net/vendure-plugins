@@ -1,3 +1,12 @@
+/**
+ * This custom shipping price calculator takes a weight unit of measure (weightUoM), a list of minimum weight thresholds
+ * and a corresponding list of prices to apply to each price range, plus a default pricing.
+ * So if for example the weight unit is kg, the weight thresholds are [1, 3, 6], the corresponding prices are [10, 20, 30]
+ * and the default price is 5, if the order weight is 1 to 2.9 Kg, the price will be 10€, if the weight is 3 to 5.9 Kg the price
+ * will be 20, from 6 Kg and more it will be 30. If the weight doesn't fall into any range (e.g. in this example it is under 1 Kg)
+ * the default price will be applied.
+ */
+
 import {
   LanguageCode,
   CalculateShippingFn,

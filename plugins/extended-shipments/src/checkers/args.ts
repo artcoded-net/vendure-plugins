@@ -1,3 +1,7 @@
+/**
+ * The minimum order value and maximum order weight args for the custom value- and weight-based shipping eligibility checkers
+ */
+
 import { LanguageCode } from "@vendure/core";
 import { ConfigArgDef } from "@vendure/core/dist/common/configurable-operation";
 

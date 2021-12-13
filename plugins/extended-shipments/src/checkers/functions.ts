@@ -1,3 +1,7 @@
+/**
+ * Helper functions to check if the order value is greater than a certain min threshold or lower than a weight threshold
+ */
+
 import { Order } from "@vendure/core";
 import { getOrderWeight } from "../utils";
 

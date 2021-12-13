@@ -1,3 +1,7 @@
+/**
+ * Checks if the total order value is over a certain min threshold AND at the same time the total weight is under a max threshold.
+ */
+
 import { LanguageCode, ShippingEligibilityChecker } from "@vendure/core";
 import { orderWeightLessThan, orderValueGreaterThan } from "./functions";
 import { minimumValue, maximumWeight } from "./args";

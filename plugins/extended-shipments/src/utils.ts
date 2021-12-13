@@ -1,3 +1,7 @@
+/**
+ * Gets total weight from an order, with output in a certain weight unit (g or kg)
+ */
+
 import { Order, OrderLine } from "@vendure/core";
 import { WeightUnit } from "./types";
 

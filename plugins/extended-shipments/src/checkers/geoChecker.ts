@@ -1,3 +1,9 @@
+/**
+ * Checks if the order shipping destination is among the selected zones or countries.
+ * It's enough that the destination country is either inside one of the selected zones or corresponds
+ * to one of the selected countries.
+ */
+
 import {
   ShippingEligibilityChecker,
   LanguageCode,
@@ -104,7 +110,7 @@ export const orderGeoChecker = new ShippingEligibilityChecker({
       }
     }
 
-    //TODO: filtrare le argCountries togliendo quelle disabilitate
+    //TODO: filter argCountries removing the disabled ones
 
     // zones condition is not satisfied... now checking country conditions
     if (argCountries && argCountries.length > 0) {

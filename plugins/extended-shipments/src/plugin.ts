@@ -1,3 +1,7 @@
+/**
+ * Configures the plugins by registering the checkers, the calculators, the custom fields and the UI extension
+ */
+
 import {
   PluginCommonModule,
   VendurePlugin,
@@ -7,7 +11,7 @@ import ProductVariantCustomFields from "./custom-fields";
 import path from "path";
 import { orderGeoChecker } from "./checkers/geoChecker";
 import { AdminUiExtension } from "@vendure/ui-devkit/compiler";
-import { valueWeightShippingEligibilityChecker } from "./checkers/valueEligibility";
+import { valueWeightShippingEligibilityChecker } from "./checkers/valueWeightChecker";
 import { flatRateShippingCalculator } from "./calculators/flatrateCalculator";
 import { weightShippingCalculator } from "./calculators/weightCalculator";
 
