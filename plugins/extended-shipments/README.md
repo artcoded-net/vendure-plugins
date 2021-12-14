@@ -8,6 +8,32 @@ This is also a good example on how to customize Vendure's shipments logic throug
 
 This plugin introduces new shipping checkers and calculators, as described below.
 
+## How to use
+
+Install:
+
+```shell
+npm install @artcoded/vendure-extended-shipments-plugin
+```
+
+or
+
+```shell
+yarn add @artcoded/vendure-extended-shipments-plugin
+```
+
+Then register in your Vendure config, like this:
+
+```typescript
+import { ExtendedShipmentsPlugin } from @artcoded/vendure-extended-shipments-plugin;
+
+//...
+
+plugins: [
+  ExtendedShipmentsPlugin
+]
+```
+
 ## Shipping price calculators
 
 The calculators are under the ./calculators folder and are:
